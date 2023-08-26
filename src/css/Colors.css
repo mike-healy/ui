@@ -1,0 +1,11 @@
+body {
+    --metal1: #F6F6F6;
+    --metal4: #8D8D8D; 
+
+    --tint1: #F58D6B;
+    --tint2: #CF6161;
+    
+    /*
+    How to get these into Tailwind ?
+    */
+}

@@ -15,7 +15,6 @@ const Lcd = () => {
     <span className="block w-48 text-lg rounded-[calc(0.5rem-0.25rem)] text-center p-2 bg-gradient-to-bl from-gray-600 to-gray-800">
       { label() }
     </span>
-    <button onClick={() => setT('Modified')}>M</button>
   </output>
 }
 

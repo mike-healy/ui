@@ -9,6 +9,7 @@ export default {
       colors: {
         tint2: {
           200: '#fdd4c7',
+          300: '#ff8a65',
           400: '#cf6161',
         }
       },

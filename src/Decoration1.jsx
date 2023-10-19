@@ -1,8 +1,8 @@
 const getColors = (color) => {
   if (color === 'slate') {
     return {
-      bg: `bg-slate-700`,
-      border: `border-slate-700`
+      bg: `bg-slate-600`,
+      border: `border-slate-600`
     }
   }
 
@@ -26,8 +26,12 @@ const Decoration1 = ({color = 'slate'}) => {
 
   return <div className="w-8 mt-8">
     <span className={`block h-2 mt-4 ${bg}`}></span>
-    <span className={`block h-4 w-4 border-r-2 ${border}`}></span>
-    <div className="bg-slate-300 h-12 text-center">m</div>
+    <span className={`block h-8 w-4 border-r-2 ${border}`}></span>
+    <div className="bg-slate-300 h-24 text-center text-sm">
+      <button className="p-2">
+        8
+      </button>
+    </div>
   </div>
 };
 

@@ -28,7 +28,7 @@ const Decoration1 = ({color = 'slate'}) => {
     <span className={`block h-2 mt-4 ${bg}`}></span>
     <span className={`block h-8 w-4 border-r-2 ${border}`}></span>
     <div className="bg-slate-300 h-24 text-center text-sm">
-      <button className="p-2">
+      <button className="p-2 bg-transparent">
         8
       </button>
     </div>

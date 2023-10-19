@@ -23,7 +23,7 @@ function App() {
               </div>
             </div>
 
-            <aside className='flex flex-col items-end w-12 pl-4 border-t border-slate-300 badfsorder-r-slate-300 border-r'>
+            <aside className='flex flex-col items-end w-12 pl-4 border-t border-r border-r-slate-300 border-t-[rgb(188,188,188)]'>
               <span className="w-8 h-8 text-center bg-tint2-400 text-tint2-300">G</span>
               <Decoration1/>
             </aside>

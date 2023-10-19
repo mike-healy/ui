@@ -9,7 +9,7 @@ article.device {
   max-width: 600px;
 
   border-radius: 20px;
-  padding: 40px;
+  padding: 32px;
 
   color: #555;
   background: linear-gradient(30deg, var(--metal1), var(--metal4));

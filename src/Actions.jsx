@@ -8,7 +8,7 @@ const Actions = () => {
     <button className='min-w-24 p-4 bg-gradient-to-b from-slate-300 to-slate-50 shadow-sm rounded-sm'>Play</button>
     <button
       onClick={() => setPaused(!paused)}
-      className='min-w-24 p-4 bg-gradient-to-b from-slate-300 to-slate-50 shadow-sm rounded-sm'
+      className='min-w-24 p-4 bg-gradient-to-b from-slate-300 to-slate-50 shadow-sm hover:shadow-md rounded-sm'
     >
       { paused ? 'PAUSED' : 'Pause'}
     </button>

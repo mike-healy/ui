@@ -7,12 +7,20 @@ import Decoration1 from './Decoration1'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [timeMode, setTimeMode] = useState(0)
+
+  const toggleTimeMode = () => {
+    setTimeMode(timeMode === 0 ? 1 : 0)
+  }
 
   return (
     <>
       <article className='device'>
         <div>
-          <Header />
+          <Header
+            toggle={toggleTimeMode}
+            timeMode={timeMode}
+          />
           <div className="flex gap-x-8">
             <Grip/>
             <div className="flex-1 max-w-5xl rounded-2xl bg-gradient-to-b from-slate-600/10 to-transparent">
@@ -25,7 +33,10 @@ function App() {
 
             <aside className='flex flex-col items-end w-12 pl-4 border-t border-r border-r-slate-300 border-t-[rgb(188,188,188)]'>
               <span className="w-8 h-8 text-center bg-tint2-400 text-tint2-300">G</span>
-              <Decoration1/>
+              <Decoration1
+                timeMode={timeMode}
+                toggle={toggleTimeMode}
+              />
             </aside>
           </div>
         </div>

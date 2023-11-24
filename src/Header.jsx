@@ -1,9 +1,12 @@
 import Lcd from './Lcd';
 
-const Header = () => {
+const Header = ({ timeMode, toggle }) => {
   return <header className="flex items-center pb-12">
     <h1 className="text-3xl flex-1 uppercase font-light">UI</h1>
-    <Lcd/>
+    <Lcd
+      timeMode={timeMode}
+      toggle={toggle}
+    />
   </header>
 }
 

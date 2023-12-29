@@ -15,7 +15,7 @@ const Lcd = ({ timeMode, toggle }) => {
   return <output className="block rounded-md p-1 bg-gray-800">
     <time
       onClick={toggle}
-      className="block w-48 text-lg rounded-[calc(0.375rem-0.25rem)] text-center p-2 bg-gradient-to-bl from-gray-600 to-gray-800"
+      className="block w-32 sm:w-48 text-sm md:text-lg rounded-[calc(0.375rem-0.25rem)] text-center p-1 sm:p-2 bg-gradient-to-bl from-gray-600 to-gray-800"
     >
       { label() }
     </time>

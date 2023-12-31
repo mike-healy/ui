@@ -25,7 +25,7 @@ const Actions = () => {
       </ActionButton>
 
       {hasStop && (
-        <ActionButton onClick={() => setHasStop(false)}>Stop</ActionButton>
+        <ActionButton onClick={() => setHasStop(false)}>Triangle?</ActionButton>
       )}
     </div>
   )

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { createActor, createMachine } from 'xstate'
+import { useActor } from '@xstate/react'
 import './App.css'
 import Header from './Header'
 import Grip from './Grip'
@@ -11,7 +13,37 @@ function App() {
 
   const toggleTimeMode = () => {
     setTimeMode(timeMode === 0 ? 1 : 0)
+    actor.send({ type: 'toggle' })
   }
+
+  /*
+  State Machine exploration. This works at a basic level,
+  but nothing depends on the state.
+
+  Next: how to integrate it with React state so it affects the UI.
+  There's an Xstate React package
+  */
+  const dateTimeMachine = createMachine({
+    id: 'toggle', // globally unique?
+    initial: 'Date',
+    states: {
+      Date: {
+        on: { toggle: 'Time' },
+      },
+      Time: {
+        on: { toggle: 'Date' },
+      },
+    }
+  });
+
+  const actor = createActor(dateTimeMachine);
+
+  actor.subscribe((snapshot) => {
+    console.log(snapshot.value);
+    // setTimeMode(snapshot.value !== 'Date' ? 1 : 0);
+  });
+
+  actor.start();
 
   return (
     <>
@@ -38,6 +70,7 @@ function App() {
                 toggle={toggleTimeMode}
               />
             </aside>
+
           </div>
         </div>
         <div>

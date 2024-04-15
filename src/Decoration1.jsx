@@ -20,8 +20,11 @@ const getColors = (color) => {
 
 }
 
-const Decoration1 = ({ color = 'slate', timeMode, toggle }) => {
-
+const Decoration1 = ({
+  color = 'slate',
+  timeMode,
+  toggle,
+}) => {
   const { bg, border } = getColors(color)
 
   const lineHeight = timeMode ? 'h-8' : 'h-6'

@@ -58,7 +58,7 @@ function App() {
             <div className="flex-1 max-w-5xl rounded-2xl bg-gradient-to-b from-slate-600/10 to-transparent">
               <div className="mx-auto d1 flex items-center place-content-center rounded-full w-32 h-32 md:w-96 md:h-96">
                 <div className="d2 flex items-center place-content-center rounded-full w-24 h-24 md:h-72 md:w-72">
-                  <div className="bg-gradient-to-tl from-slate-300 to-slate-100 rounded-full w-12 h-12 md:h-40 md:w-40 hover:w-24 shadow-md hover:rotate-90 transform-gpu transition-all"></div>
+                  <div className="bg-gradient-to-tl from-slate-300 to-slate-100 rounded-full w-12 h-12 md:h-40 md:w-40 __hover:w-24 shadow-md hover:rotate-90 transform-gpu transition-all"></div>
                 </div>
               </div>
             </div>

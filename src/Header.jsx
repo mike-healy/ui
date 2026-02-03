@@ -4,7 +4,7 @@ const Header = ({ timeMode, toggle }) => {
   return <header className="flex items-center pb-12">
     <h1 className="text-3xl flex-1 font-light">
       UI
-      <span className="text-sm">/ playground</span>
+      <span className="text-sm">///:.</span>
     </h1>
     <Lcd
       timeMode={timeMode}

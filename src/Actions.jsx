@@ -35,10 +35,14 @@ const Actions = () => {
       </ActionButton>
 
       {hasStop && (
-        <ActionButton onClick={() => {
-          setHasStop(false)
-          setClickCount(clickCount + 1)
-        }}>Triangle?</ActionButton>
+        <ActionButton
+          onClick={() => {
+            setHasStop(false)
+            setClickCount(clickCount + 1)
+          }}
+        >
+          Triangle
+        </ActionButton>
       )}
       <ActionButton>{ clickCount }</ActionButton>
     </div>
